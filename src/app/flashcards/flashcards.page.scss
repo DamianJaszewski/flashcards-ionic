@@ -1,0 +1,32 @@
+#flashcard{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px !important;
+    height: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 100px;
+  }
+
+#end{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 100px;
+    visibility: hidden;
+}
+
+.buttons{
+    width: 180px !important;
+}
+
+#question{
+    font-size: 30px;
+}
+
+#answer{
+    font-size: 30px;
+    visibility: hidden;
+}

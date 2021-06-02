@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>GotIT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Zwierzęta</p>
+              <a [routerLink]="['/flashcards']" [state]="{name:'animals'}" class="btn btn-primary"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Programowanie</p>
+              <a [routerLink]="['/flashcards']" [state]="{name:'development'}" class="btn btn-primary"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Miesiące</p>
+              <a [routerLink]="['/flashcards']" [state]="{name:'months'}" class="btn btn-primary"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Temat 4</p>
+              <a href="/flashcards"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Temat 5</p>
+              <a href="/flashcards"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <p>Temat 6</p>
+              <a href="/flashcards"><ion-button size="small">Start</ion-button></a>
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

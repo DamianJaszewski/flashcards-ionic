@@ -5,25 +5,23 @@
 </ion-header>
 
 <ion-content>
-  <p>{{message.name | json}}</p>
 
   <ion-card id="flashcard" class="ion-justify-content-center">
     <ion-card-header>
-      <ion-card-subtitle>fiszka nr <a id="id">{{FlashcardsAngular[0].Id}}</a></ion-card-subtitle>
-      <ion-card-title class="ion-text-center">Kategoria : <a id="category">{{FlashcardsAngular[0].Category}}</a></ion-card-title>
+      <ion-card-subtitle>fiszka nr <a id="id">{{FlashcardsAngular[random].Id}}</a></ion-card-subtitle>
+      <ion-card-title class="ion-text-center">Kategoria : <a id="category">{{FlashcardsAngular[random].Category}}</a></ion-card-title>
     </ion-card-header>
     <ion-card-content class="ion-text-center">
       
-      <p id="question">{{FlashcardsAngular[0].Question}}</p><br>
+      <p id="question">{{FlashcardsAngular[random].Question}}</p><br>
   
       <ion-button (click)="showAnswer()" size="small">Pokaż odpowiedź</ion-button><br><br>
   
-      <p id="answer">{{FlashcardsAngular[0].Answer}}</p>
+      <p id="answer">{{FlashcardsAngular[random].Answer}}</p>
   
     </ion-card-content>
   </ion-card> 
   
- 
   <ion-grid>
     <ion-row class="ion-justify-content-center" id="buttons">
     <ion-button (click)="remember()" class="buttons" color="success">Zapamiętane</ion-button>
@@ -31,7 +29,6 @@
   </ion-row>
   </ion-grid>
  
-  
   <ion-card id="end" >
     <ion-card-header>
     <ion-card-title class="ion-text-center">Gratulacje! Materiał opanowany!<br>
@@ -39,6 +36,14 @@
     </ion-card-title>
     </ion-card-header>
   </ion-card>
+
+  <!-- <ion-card id="start" >
+    <ion-card-header>
+    <ion-card-title class="ion-text-center">Zaczynamy, losuj fiszkę!<br>
+    <ion-button (click)="nextQuestion()" class="buttons" color="success">Losuj</ion-button>
+    </ion-card-title>
+    </ion-card-header>
+  </ion-card> -->
   
 </ion-content>
 

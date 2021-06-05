@@ -49,6 +49,6 @@ export class FlashcardsService {
 * wyswietlenie pogody dla wprowadzonego miasta
 ## Kontakt
 Aplikację stworzyli:
-Damian Jaszewski @damianjaszewski@gmail.com
-Bartosz Twardziak
-Damian Hinc
+* Damian Jaszewski @damianjaszewski@gmail.com
+* Bartosz Twardziak
+* Damian Hinc
